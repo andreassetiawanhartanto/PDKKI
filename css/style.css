@@ -1,4 +1,4 @@
-.nav-tabs{
+/*.nav-tabs{
   text-align: center;
 }
 
@@ -11,9 +11,6 @@
   text-align: center;
 }
 
-.container{
-  margin-top: 30px;
-}
 
 .top50{
   margin-top: 50px;
@@ -97,6 +94,7 @@ h1.contentheading{
 
 .media-heading{
   text-align: left;
+  margin-top: 20px;
 }
 
 .faces-thumb{
@@ -116,6 +114,7 @@ h4{
 
 .navbar-default{
   background-color: white;
+  padding-top: 25px;
 }
 
 .navbar-brand{
@@ -135,6 +134,19 @@ h4{
     .navbar-brand{
       display: block;
     }
+
+    .media-heading{
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .navbar-default{
+      padding-top: 10px;
+    }
+
+    .content{
+        padding: 35px 15px 0 !important;
+    }
 }
 
 .navbar-brand{
@@ -149,4 +161,101 @@ h4{
 
 .navbar-nav > li{
   margin-bottom: -1px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 135px;
+}
+
+.content {
+    padding: 85px 15px 0;
+}
+
+.media{
+    /*display: table-cell;*/
+/*}
+
+body{
+  margin-bottom: 135px;
+}
+
+body > .container {
+    padding: 60px 15px 0;
+}*/
+
+/*Footer Part*/
+
+.footer{
+    background-color: white; 
+    height: auto;
+}
+
+.media-heading{
+  text-align: right;
+}
+
+.showMobile{
+    display: none;
+  }
+
+@media (max-width: 768px){
+  .showMobile{
+    display: block;
+  }
+
+  .showDesktop{
+    display: none;
+  }
+
+  .media-heading {
+    text-align: left;
+  }
+}
+
+
+/*Content Part*/
+
+.well1{
+  padding: 15px;
+  background-color: #EDEDED;
+  border: 1px solid;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/*Header Part*/
+
+.navbar-default{
+  background-color: white;
+  padding-top: 25px;
+}
+
+.navbar-nav > li{
+  margin-bottom: -1px;
+}
+
+.navbar-brand{
+  padding: 0px 10px !important;
+}
+
+.navbar-default .navbar-nav > .active > a{
+      border: 1px solid #e7e7e7;
+    border-bottom: none;
+    background-color: white !important;
+}
+
+.nav-tabs > li.active > a{
+  color: black !important;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
 }

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://getbootstrap.com/examples/sticky-footer-navbar/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./stickyFooter_files/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./stickyFooter_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./stickyFooter_files/sticky-footer-navbar.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./stickyFooter_files/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom Script -->
+
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="./bower_components/angular-csv-import-tmp/dist/angular-csv-import.js"></script>
+    <script src="./bower_components/ng-file-upload/ng-file-upload-all.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="index.js"></script>\
+    
+    <!-- Custom css -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+  </head>
+
+  <body data-ng-app="helloApp" ng-controller="MainCtrl">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/logo_PDKKI.jpg" width="60px" height="auto"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+           <ul class="nav navbar-nav">
+              <li ng-click="select('home')" ng-class="{active: isActive('home')}"><a href="#">Home</a></li>
+              <li ng-click="select('about')"  ng-class="{active: isActive('about')}"><a href="#about">About Us</a></li>
+              <li ng-click="select('contact')" ng-class="{active: isActive('contact')}"><a href="#about">Contact Us</a></li>
+              <li ng-click="select('faces')" ng-class="{active: isActive('faces')}"><a href="#contact">Faces of PDKKI</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="content container">
+        <div class="row content-header">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2>PDKKI</h2>
+                <h5>MELBOURNE</h5>
+                <p>Persekutuan Doa Keluarga Katolik Indonesia</p>
+                <img src="img/cross.gif" width="40px" height="60px">
+                <br /> <br />
+          </div>
+      </div>
+      <div class="row" id="home" ng-show="isActive('home')">
+            <div class="col-sm-12 text-center">
+            <h4 class="well1">"Dalam kuasa dan karya Roh Kudus, berkumpul bersama melalui penghayatan iman katolik untuk bertumbuh dan mencapai tujuan hidup Kristiani"</h4> <br />
+              <b> Kegiatan: </b> <br />
+              Misa <br />
+              Adorasi <br />
+              Persekutuan Doa <br />
+              Praise & Wordship <br />
+              Pendalaman Iman <br />
+              Kebangunan Rohani Katolik <br />
+              Retret <br />
+              Pelayanan <br />
+          </div>
+      </div>
+
+      <div class="row" id="aboutUs" ng-show="isActive('about')">
+            <div class="col-md-12 text-center">
+              <h3>PDKKI Melbourne... Apa tuh?</h3>
+              <p>Persekutuan Doa Keluarga Katolik Indonesia (PDKKI) Melbourne adalah sebuah organisasi yang berada di bawah naungan Keluarga Katolik Indonesia (KKI) Melbourne. Menurut sejarahnya, Persekutuan Doa (PD) ini pertama kali dibentuk pada tahun 1997 dengan nama PD Santa Maria, dan pada bulan Juli 1998 diresmikan menjadi bagian dari KKI dengan nama PDKKI Melbourne.</p>
+               <p>PDKKI Melbourne, dengan segenap potensi yang berlandaskan pada iman dan ajaran Gereja Katolik, memiliki tujuan utama untuk membawa para anggota mengenal Yesus yang hidup, serta merasakan cinta kasih Allah yang sempurna dalam bimbingan Roh Kudus demi mencapai kehidupan yang kudus.</p>
+               <h3>Terus kegiatan PDKKI Melbourne apa aja?</h3>
+               <p>PDKKI Melbourne mengadakan kegiatan Persekutuan Doa (PD) rutin seminggu sekali yang mencakup doa, pujian dan penyembahan, serta pengajaran/sharing/diskusi. Di samping itu, beberapa kegiatan lain PDKKI yang dapat membangun dan membentuk kehidupan rohani para anggotanya untuk mencapai tujuan di atas adalah:</p>
+               <ul id="day">
+                <li>
+                  Kebangunan Rohani Katolik (KRK)</li>
+                <li>
+                  Malam Penyegaran Rohani (MPR)</li>
+                <li>
+                  Seminar Hidup Baru (SHB)</li>
+                <li>
+                  Retret tahunan PDKKI Melbourne</li>
+              </ul>
+              <h3>Terus apa lagi?</h3>
+              <p>Ingin mengenal PDKKI Melbourne lebih dalam? Penasaran akan pengajaran, sharing, dan diskusi yang diadakan PDKKI Melbourne untuk membawa anggotanya mengenal dan merasakan cinta kasih Allah? Ikuti terus perkembangannya di website ini. Terlebih dari itu, ingin melangkah maju untuk mengenal Tuhan dengan lebih lagi? Ingin belajar untuk hidup di hadirat-Nya mencapai kekudusan? Mari datang ke acara persekutuan doa PDKKI Melbourne setiap Sabtu sore di St. Augustine's Church, Melbourne, VIC 3000.</p>
+          </div>
+      </div>
+
+      <div class="row" id="contactUs" ng-show="isActive('contact')">
+        <div class="col-sm-5">
+          <h4>Contact Person :</h4>
+          <ul>
+            <li>Lucy Munanto - 0430 455 669</li>
+            <li>Andreas Setiawan - 0452 027 177</li>
+          </ul>
+          <h4>Kegiatan Berkala :</h4>
+          <p>Setiap hari Sabtu @ St. Agustine Church @18.00</p>
+          <h4>Lokasi :</h4>
+          <p>St. Augustine's Church <br/ > 631 Bourke St. Melbourne, Vic 3000</p>
+          <h4>Public Transport :</h4>
+          <p><b>Train</b><br/ > All city loop train - Alight at Southern Cross Station</p>
+          <p><b>Tram</b><br/ > Tram no. 86 to Waterfront City Docklands or 96 to St. Kilda Beach <br/> Alight at stop no. 1, Southern Cross Station</p>
+        </div>
+        <div class="col-sm-7 top10">
+          <iframe width="100%" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:Eiw2MzEgQm91cmtlIFN0LCBNZWxib3VybmUgVklDIDMwMDAsIEF1c3RyYWxpYQ&key=AIzaSyC2m2bKUwl_Oq8Ch0WXvboM3TTb2yukA44" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="row" id="facesOfPddki" ng-show="isActive('faces')">
+            <div class="col-sm-12 centered">
+              <div class="faces top20">
+                <div class="col-sm-7">
+                  <iframe width="560" height="315" ng-src="{{currentProjectUrl}}" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-5">
+                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
+                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
+                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
+                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
+                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
+                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
+                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
+                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
+                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container showMobile">
+            <div class="row">
+              <div class="col-sm-8">
+                <img src="img/sitelogo.png" class="logo img-responsive">
+              </div>
+              <div class="col-sm-4 media-middle">
+                <h4 class="media-heading">Join Us | Persekutuan Doa <br />Every Saturday – 06:00 <br /> PM St. Augustine Church – 631 Bourke St , Melbourne</h4>
+              </div>
+            </div>
+          </div>
+        
+        <div class="media container showDesktop">
+            <div class="media-left media-middle">
+              <a href="#">
+                <img src="img/sitelogo.png" class="logo media-object" width="auto" height="130px">
+              </a>
+            </div>
+            <div class="media-body media-middle">
+               <h4 class="media-heading">Join Us | Persekutuan Doa <br />Every Saturday – 06:00 <br /> PM St. Augustine Church – 631 Bourke St , Melbourne</h4>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./stickyFooter_files/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./stickyFooter_files/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./stickyFooter_files/ie10-viewport-bug-workaround.js"></script>
+  
+
+</body></html>
