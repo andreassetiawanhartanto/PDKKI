@@ -29,7 +29,6 @@
 
     <script src="./bower_components/angular/angular.js"></script>
     <script src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="./bower_components/angular-csv-import-tmp/dist/angular-csv-import.js"></script>
     <script src="./bower_components/ng-file-upload/ng-file-upload-all.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="index.js"></script>\
@@ -72,10 +71,10 @@
                 <h5>MELBOURNE</h5>
                 <p>Persekutuan Doa Keluarga Katolik Indonesia</p>
                 <img src="img/cross.gif" width="40px" height="60px">
-                <br /> <br />
+                <br />
           </div>
       </div>
-      <div class="row" id="home" ng-show="isActive('home')">
+      <div class="row" id="home" ng-if="isActive('home')">
             <div class="col-sm-12 text-center">
             <h4 class="well1">"Dalam kuasa dan karya Roh Kudus, berkumpul bersama melalui penghayatan iman katolik untuk bertumbuh dan mencapai tujuan hidup Kristiani"</h4> <br />
               <b> Kegiatan: </b> <br />
@@ -88,14 +87,14 @@
               Retret <br />
               Pelayanan <br /> <br />
               <h4>Follow Us :</h4>
-              <i class="fa fa-facebook-official"></i>
-              <i class="fa fa-instagram"></i>
-              <i class="fa fa-youtube-play"></i>
-              <i class="fa fa-envelope-o"></i>
+              <a href="https://www.facebook.com/pdkkimelb"><i class="fa fa-facebook-official"></i></a>
+              <a href="https://www.instagram.com/pdkkimelbourne/"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCaqQkfnTKtJQGn-9YSu9eeg"><i class="fa fa-youtube-play"></i></a>
+              <a href="mailto:pdkkimelbourneaus@gmail.com"><i class="fa fa-envelope-o"></i></a>
           </div>
       </div>
 
-      <div class="row" id="aboutUs" ng-show="isActive('about')">
+      <div class="row" id="aboutUs" ng-if="isActive('about')">
             <div class="col-md-12 text-center">
               <h3>PDKKI Melbourne... Apa tuh?</h3>
               <p>Persekutuan Doa Keluarga Katolik Indonesia (PDKKI) Melbourne adalah sebuah organisasi yang berada di bawah naungan Keluarga Katolik Indonesia (KKI) Melbourne. Menurut sejarahnya, Persekutuan Doa (PD) ini pertama kali dibentuk pada tahun 1997 dengan nama PD Santa Maria, dan pada bulan Juli 1998 diresmikan menjadi bagian dari KKI dengan nama PDKKI Melbourne.</p>
@@ -117,7 +116,7 @@
           </div>
       </div>
 
-      <div class="row" id="contactUs" ng-show="isActive('contact')">
+      <div class="row" id="contactUs" ng-if="isActive('contact')">
         <div class="col-sm-5">
           <h4>Contact Us :</h4>
           <ul>
@@ -137,22 +136,16 @@
         </div>
       </div>
 
-      <div class="row" id="facesOfPddki" ng-show="isActive('faces')">
+      <div class="row" id="facesOfPddki" ng-if="isActive('faces')">
             <div class="col-sm-12 centered">
               <div class="faces top20">
                 <div class="col-sm-7">
-                  <iframe width="560" height="315" ng-src="{{currentProjectUrl}}" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="100%" height="400px" ng-src="{{currentUrl}}" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="col-sm-5">
-                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
-                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
-                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
-                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
-                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
-                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
-                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
-                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
-                  <div class="faces-thumb"><img src="http://img.youtube.com/vi/5ml7ezbVMY4/1.jpg"></div>
+                  <div class="faces-thumb" ng-repeat="video in videos" ng-click="changeVideoSrc(video)">
+                    <img ng-src="{{video.thumbnail}}">
+                  </div>
                 </div>
               </div>
           </div>
@@ -177,6 +170,7 @@
               <a href="#">
                 <img src="img/sitelogo.png" class="logo media-object" width="auto" height="130px">
               </a>
+              <p>PDKKI berada dibawah naungan Keluarga Katolik Indonesia – KKI</p>
             </div>
             <div class="media-body media-middle">
                <h4 class="media-heading">Join Us | Persekutuan Doa <br />Every Saturday – 06:00 <br /> PM St. Augustine Church – 631 Bourke St , Melbourne</h4>
@@ -193,6 +187,8 @@
     <script src="./stickyFooter_files/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./stickyFooter_files/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- http://demo.jankuri.com/ngGallery/ -->
 
 
 </body></html>
