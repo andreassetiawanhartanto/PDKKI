@@ -11,27 +11,37 @@
     <title>PDKKI Melbourne</title>
     <!-- Bootstrap core CSS -->
     <link href="./stickyFooter_files/bootstrap.min.css" rel="stylesheet">
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="./stickyFooter_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
     <link href="./stickyFooter_files/sticky-footer-navbar.css" rel="stylesheet">
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="./stickyFooter_files/ie-emulation-modes-warning.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '976109425809309',
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
 
     <!-- Custom Script -->
-
     <script src="./bower_components/angular/angular.js"></script>
-    <script src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="./bower_components/ng-file-upload/ng-file-upload-all.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="index.js"></script>\
+
+    <!-- Angular UI -->
+    <script src="./bower_components/angular-ui/ui-bootstrap-custom-tpls-1.0.3.js"></script>
+    <link rel="stylesheet" href="./bower_components/angular-ui/ui-bootstrap-custom-1.0.3-csp.css">
+    <script src="index.js"></script>
 
     <!-- Custom css -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -118,18 +128,14 @@
 
       <div class="row" id="contactUs" ng-if="isActive('contact')">
         <div class="col-sm-5">
-          <h4>Contact Us :</h4>
-          <ul>
-            <li>Lucy Munanto - 0430 455 669</li>
-            <li>Andreas Setiawan - 0452 027 177</li>
-          </ul>
-          <h4>Kegiatan Berkala :</h4>
-          <p>Setiap hari Sabtu @ St. Agustine Church @18.00</p>
-          <h4>Lokasi :</h4>
-          <p>St. Augustine's Church <br/ > 631 Bourke St. Melbourne, Vic 3000</p>
+          <h4>Join Us :</h4>
+          <p>Every Saturday 6.00 PM St. Agustine's Church @18.00 <br/ >
+          631 Bourke St Melbourne, VIC 3000 <br/ >
+          (Please stay in touch via Facebook for any location changes) <br/ >
+          <b>Parking is available</b></p><br/ >
           <h4>Public Transport :</h4>
           <p><b>Train</b><br/ > All city loop train - Alight at Southern Cross Station</p>
-          <p><b>Tram</b><br/ > Tram no. 86 to Waterfront City Docklands or 96 to St. Kilda Beach <br/> Alight at stop no. 1, Southern Cross Station</p>
+          <p><b>Tram</b><br/ > Tram no. 86 or no. 96 Stop 1 Southern Cross Station</p>
         </div>
         <div class="col-sm-7 top10">
           <iframe width="100%" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:Eiw2MzEgQm91cmtlIFN0LCBNZWxib3VybmUgVklDIDMwMDAsIEF1c3RyYWxpYQ&key=AIzaSyC2m2bKUwl_Oq8Ch0WXvboM3TTb2yukA44" allowfullscreen></iframe>
@@ -137,18 +143,26 @@
       </div>
 
       <div class="row" id="facesOfPddki" ng-if="isActive('faces')">
-            <div class="col-sm-12 centered">
-              <div class="faces top20">
-                <div class="col-sm-7">
-                  <iframe width="100%" height="400px" ng-src="{{currentUrl}}" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="col-sm-5">
-                  <div class="faces-thumb" ng-repeat="video in videos" ng-click="changeVideoSrc(video)">
-                    <img ng-src="{{video.thumbnail}}">
-                  </div>
-                </div>
-              </div>
-          </div>
+        <uib-tabset>
+           <uib-tab heading="Videos">
+             <div class="col-sm-12 centered">
+                 <div class="faces top20">
+                   <div class="col-sm-7">
+                     <iframe width="100%" height="400px" ng-src="{{currentUrl}}" frameborder="0" allowfullscreen></iframe>
+                   </div>
+                   <div class="col-sm-5">
+                     <div class="faces-thumb" ng-repeat="video in videos" ng-click="changeVideoSrc(video)">
+                       <img ng-src="{{video.thumbnail}}">
+                     </div>
+                   </div>
+                 </div>
+             </div>
+           </uib-tab>
+           <uib-tab heading="Photos">
+             Photos
+           </uib-tab>
+         </uib-tabset>
+
       </div>
 
     </div>
@@ -160,7 +174,7 @@
                 <img src="img/sitelogo.png" class="logo img-responsive">
               </div>
               <div class="col-sm-4 media-middle">
-                <h4 class="media-heading">Join Us | Persekutuan Doa <br />Every Saturday – 06:00 <br /> PM St. Augustine Church – 631 Bourke St , Melbourne</h4>
+                <h4 class="media-heading">Join Us | Persekutuan Doa <br />Every Saturday – 06:00 PM <br /> St. Augustine Church – 631 Bourke St , Melbourne</h4>
               </div>
             </div>
           </div>
@@ -173,7 +187,7 @@
               <p>PDKKI berada dibawah naungan Keluarga Katolik Indonesia – KKI</p>
             </div>
             <div class="media-body media-middle">
-               <h4 class="media-heading">Join Us | Persekutuan Doa <br />Every Saturday – 06:00 <br /> PM St. Augustine Church – 631 Bourke St , Melbourne</h4>
+               <h4 class="media-heading">Join Us | Persekutuan Doa <br />Every Saturday – 06:00 PM <br /> St. Augustine Church – 631 Bourke St , Melbourne</h4>
             </div>
         </div>
     </footer>
@@ -184,11 +198,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./stickyFooter_files/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./stickyFooter_files/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./stickyFooter_files/ie10-viewport-bug-workaround.js"></script>
 
-    <!-- http://demo.jankuri.com/ngGallery/ -->
+    <script src="./stickyFooter_files/ie10-viewport-bug-workaround.js"></script>
 
 
 </body></html>

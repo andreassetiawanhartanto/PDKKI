@@ -38,7 +38,11 @@
 
 /*Content Part*/
 
-body{ margin-bottom: 145px;}
+body > .container {
+    padding: 80px 15px 0 !important;
+}
+
+body{ margin-bottom: 175px;}
 .footer{
   position: fixed;
   left: 0;
@@ -92,7 +96,7 @@ body{ margin-bottom: 145px;}
 
 .navbar-default{
   background-color: white;
-  padding-top: 25px;
+  padding-top: 30px;
 }
 
 .navbar-nav > li{
