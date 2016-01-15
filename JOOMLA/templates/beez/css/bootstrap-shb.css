@@ -1,0 +1,74 @@
+/* ==|== BOOSTRAP =====================================================
+   Author:
+   ========================================================================== */
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F5F5F5;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #E6E6E6);
+    background-repeat: repeat-x;
+    border-color: #CCCCCC #CCCCCC #B3B3B3;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding: 4px 10px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+	font-family: "Georgia", sans-serif;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.btn:first-child {
+}
+
+.btn-primary {
+    background-color: #0074CC;
+    background-image: -moz-linear-gradient(center top , #0088CC, #0055CC);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary, .btn-primary:hover, .btn-warning, .btn-warning:hover, .btn-danger, .btn-danger:hover, .btn-success, .btn-success:hover, .btn-info, .btn-info:hover, .btn-inverse, .btn-inverse:hover {
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-large {
+    border-radius: 5px 5px 5px 5px;
+    font-size: 15px;
+    line-height: normal;
+    padding: 9px 14px;
+}
+
+.jumbotron .btn-large {
+    border-radius: 6px 6px 6px 6px;
+    font-size: 20px;
+    font-weight: normal;
+    margin-right: 10px;
+    padding: 14px 24px;
+}
+
+/**** SHB 2012 ***/
+.ui-wrapperbody { padding: 35px 0 15px; }
+#contentHome .moduletableHome { margin: 10px 0; }
+
+body, #container { background-color: #FFF; background: none; }
+
+.shb-panel { font-family: 'Georgia', sans-serif; }
+.shb-panel h1 { border: none; color: #000; font-family: 'Georgia', sans-serif; font-size: 58px; font-style: italic; font-weight: 400; letter-spacing: -2px; }
+.shb-panel h2 { color: #000; font-family: 'Georgia', sans-serif; font-size: 40px; font-style: italic; font-weight: 400; letter-spacing: -2px; }
+.shb-panel .title { float: left; text-align: center; width: 54%; }
+.shb-panel .view-info a { margin-top: 110px; width: 88%; }
+.shb-panel .photos { float: right; width: 45%;  }

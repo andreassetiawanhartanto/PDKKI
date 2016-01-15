@@ -1,0 +1,19 @@
+Hello
+This is the install package for joomla 1.5.x. 
+Here you will find the component and some modules and a plugin to integrate a google 
+calendar into a joomla based web site.
+
+***** INSTALLATION *****
+To install extract the component, your desired modules and the plugins and install them 
+with the joomla installer.
+
+***** Upgrade *****
+To upgrade from previous GCalendar versions extract the component, your allready installed
+modules and the plugins and install them with the joomla installer.
+
+***** DOCUMENTATION *****
+Check http://g4j.laoneo.net for the documentation, forum and current issues. 
+
+
+Have fun
+the G4J team

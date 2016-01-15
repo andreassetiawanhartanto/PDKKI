@@ -1,0 +1,32 @@
+/**
+ * INSTALL
+ *
+ * @package     NoNumber!-installer
+ * @version     11.10.5
+ *
+ * @author      Peter van Westen <peter@nonumber.nl>
+ * @link        http://www.nonumber.nl
+ * @copyright   Copyright © 2011 NoNumber! All Rights Reserved
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+
+INSTALLING / UPDATING
+=====================
+This package will install all the extensions in the package.
+Install this package by use of the standard installer in your Joomla! administrator.
+
+If you already have this extension installed, this package will automatically update it.
+So you do not need to uninstall the extension(s) first.
+
+TROUBLESHOOTING
+===============
+If for some reason the installation fails, you can try to install it manually as explained here:
+http://docs.joomla.org/Installing_an_extension
+
+Please make sure your setup/server meets the minumum requirements for the extension.
+You can find these requirements under the 'Specs' tab on the extension details page on
+http://www.nonumber.nl
+
+PHP 5.2 can cause problems during installation.
+Please note that the extensions need at least php 5.3 to function correctly.

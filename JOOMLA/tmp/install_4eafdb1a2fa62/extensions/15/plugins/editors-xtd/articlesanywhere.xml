@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/plugin-install.dtd">
+<install type="plugin" group="editors-xtd" version="1.5">
+	<name>Button - Articles Anywhere</name>
+	<description>PLG_EDITORS-XTD_ARTICLESANYWHERE_DESC</description>
+	<version>1.13.1</version>
+	<creationDate>October 2011</creationDate>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright © 2011 NoNumber! All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<!-- Files -->
+	<files>
+		<filename plugin="articlesanywhere">articlesanywhere.php</filename>
+		<folder>articlesanywhere</folder>
+	</files>
+
+	<!-- Parameters -->
+	<params addpath="/plugins/system/nnframework/fields">
+		<param name="@loadlanguage" type="nn_loadlanguage" extension="plg_editors-xtd_articlesanywhere" />
+		<param name="@license" type="nn_license" extension="ARTICLES_ANYWHERE" />
+		<param name="@version" type="nn_version" extension="ARTICLES_ANYWHERE" xml="/plugins/editors-xtd/articlesanywhere.xml" />
+		<param name="@dependency" type="nn_dependency"
+			label="AA_THE_SYSTEM_PLUGIN"
+			file="/plugins/system/articlesanywhere.php" />
+		<param name="@header" type="nn_header"
+			label="ARTICLES_ANYWHERE"
+			description="ARTICLES_ANYWHERE_DESC"
+			xml="/plugins/editors-xtd/articlesanywhere.xml"
+			image="/plugins/editors-xtd/articlesanywhere/images/logo.png"
+			image_w="60" image_h="80"
+			url="http://www.nonumber.nl/articlesanywhere"
+			help_url="http://www.nonumber.nl/articlesanywhere" />
+
+		<param name="button_text" type="text" default="Insert Article" label="NN_BUTTON_TEXT" description="NN_BUTTON_TEXT_DESC" />
+		<param name="button_icon" type="radio" default="1" label="NN_SHOW_ICON" description="NN_SHOW_ICON_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enable_frontend" type="radio" default="1" label="NN_ENABLE_IN_FRONTEND" description="NN_ENABLE_IN_FRONTEND_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+
+		<param name="@block_tag_a" type="nn_block" start="1" label="AA_DEFAULT_DATA_TAG_SETTINGS" description="AA_DEFAULT_DATA_TAG_SETTINGS_DESC" />
+			<param name="data_title_enable" type="radio" default="1" label="AA_ENABLE_TITLE_TAG" description="AA_ENABLE_TITLE_TAG_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+
+			<param name="@hr_data_text" type="nn_hr" />
+
+			<param name="data_text_enable" type="radio" default="1" label="AA_ENABLE_TEXT_TAG" description="AA_ENABLE_TEXT_TAG_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="@toggler_data_text_a" type="nn_toggler" param="data_text_enable" value="1" />
+				<param name="data_text_type" type="radio" default="text" label="AA_TEXT_TYPE" description="AA_TEXT_TYPE_DESC">
+					<option value="text">AA_ALL_TEXT</option>
+					<option value="introtext">AA_INTRO_TEXT</option>
+					<option value="fulltext">AA_FULL_TEXT</option>
+				</param>
+				<param name="data_text_length" type="text" default="0" label="AA_MAXIMUM_TEXT_LENGTH" description="AA_MAXIMUM_TEXT_LENGTH_DESC" />
+				<param name="data_text_strip" type="radio" default="0" label="AA_STRIP_HTML_TAGS" description="AA_STRIP_HTML_TAGS_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</param>
+			<param name="@toggler_data_text_b" type="nn_toggler" />
+
+			<param name="@hr_data_readmore" type="nn_hr" />
+
+			<param name="data_readmore_enable" type="radio" default="1" label="AA_ENABLE_READMORE_TAG" description="AA_ENABLE_READMORE_TAG_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="@toggler_data_readmore_a" type="nn_toggler" param="data_readmore_enable" value="1" />
+				<param name="data_readmore_text" type="text" default="" label="AA_READMORE_TEXT" description="AA_READMORE_TEXT_DESC" />
+				<param name="data_readmore_class" type="text" default="" label="AA_CLASSNAME" description="AA_CLASSNAME_DESC" />
+			<param name="@toggler_data_readmore_b" type="nn_toggler" />
+
+			<param name="@hr_data_id" type="nn_hr" />
+
+			<param name="data_id_enable" type="radio" default="0" label="AA_ENABLE_ID_TAG" description="AA_ENABLE_ID_TAG_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+
+			<param name="@hr_div" type="nn_hr" />
+
+			<param name="div_enable" type="radio" default="0" label="AA_EMBED_IN_A_DIV" description="AA_EMBED_IN_A_DIV_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="div_width" type="text" default="" label="NN_WIDTH" description="AA_WIDTH_DESC" />
+			<param name="div_height" type="text" default="" label="NN_HEIGHT" description="AA_HEIGHT_DESC" />
+			<param name="div_float" type="radio" default="" label="AA_ALIGNMENT" description="AA_ALIGNMENT_DESC">
+				<option value="">None</option>
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</param>
+			<param name="div_class" type="text" default="" label="AA_DIV_CLASSNAME" description="AA_DIV_CLASSNAME_DESC" />
+
+			<param name="@hr_content_type" type="nn_hr" />
+
+			<param name="content_type" type="radio" default="core" label="AA_CONTENT_TYPE" description="AA_CONTENT_TYPE_DESC">
+				<option value="core">AA_CONTENT_TYPE_CORE</option>
+				<option value="k2">AA_CONTENT_TYPE_K2</option>
+			</param>
+		<param name="@block_tag_b" type="nn_block" end="1" />
+	</params>
+</install>

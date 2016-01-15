@@ -1,0 +1,255 @@
+**
+ * Changelog
+ *
+ * @package     Articles Anywhere
+ * @version     1.13.1
+ *
+ * @author      Peter van Westen <peter@nonumber.nl>
+ * @link        http://www.nonumber.nl
+ * @copyright   Copyright © 2011 NoNumber! All Rights Reserved
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+/**
+ * + Added
+ * ! Removed
+ * ^ Changed
+ * # Fixed
+ */
+
+17-Oct-2011 : v1.13.1
+ + Added translations: th-TH
+ ^ Updated translations: pt-BR
+ # Fixed security issue in NoNumber! Framework plugin
+
+08-Oct-2011 : v1.13.0
+ ^ Improved installer
+ ^ Moved translation language files to main package (no more language packs)
+ ^ Cleaned up some code (like no more use of DS)
+ # Fixed issue with tags being handled in editor button popup
+ # Fixed issue with k2 items not working correctly (always showing item 2)
+
+16-Sep-2011 : v1.12.0
+ ^ Changed NoNumber! Elements plugin to NoNumber! Framework
+ ^ Moved common language strings to NoNumber! Framework files
+ # Fixed issue with colon characters in article titles
+ # Fixed issue with surrounding whitespace
+
+05-Aug-2011 : v1.11.7
+ # Fixed issue with modules with user group selections not working properly in Joomla 1.6+
+ # Fixed issue error on datetime.php in Joomla 1.5
+
+04-Aug-2011 : v1.11.6
+ # Fixed issue with setting elements not working in Joomla 1.5
+
+04-Aug-2011 : v1.11.5
+ # Fixed issue with articles with user group selections not working properly in Joomla 1.6+
+
+21-Jul-2011 : v1.11.4
+ ^ Optimized code to make it faster
+ # Fixed some issues with surrounding tags and whitespace
+ # Fixed issue with tags not being handled in some cases
+
+12-Jul-2011 : v1.11.3
+ # Fixed issue with tags not being handled in some cases
+
+11-Jul-2011 : v1.11.1
+ + Added ability to reference the article it is used in with {article current} or {article self}
+ ^ Changed layout of options
+ ^ Changed use of elements
+ # Fixed issue with articles with higher access level showing in Joomla 1.6
+ # Fixed issue with tags not working outside component area of disabled components
+ # Fixed issue with Read More text not being translated for Joomla 1.6
+ # Fixed issue with date formats not working in Joomla 1.6
+ # Fixed issue with 'jS' in date format not working in Joomla 1.5
+ # Fixed issue with JEventHandler error on some setups
+
+23-May-2011 : v1.11.0
+ + Joomla 1.6 compatible!
+ # Fixed issue with some strings sometimes being interpreted as dates
+
+30-Mar-2011 : v1.10.3
+ ^ Made code a little lighter
+ ^ Added break to prevent looping of article inclusion
+ ^ Ads space before the '...' on limited text if last character is not a letter/number
+ # Fixed issue with readmore class not being inserted when it is 'readmore'
+ # Fixed issue with some non-UTF-8 pages breaking
+ # Fixed issue plugin being executed on raw format pages
+ # Fixed issue content type selection field in editor button popup not working
+
+25-Mar-2011 : v1.10.2
+ ^ Changed word limit functionality to not strip text by default
+ # Fixed issue with search component breaking in some cases
+ # Fixed issue with triple dots not being added on word limited text
+ # Fixed issue with leading/trailing paragraph/div tags not being handled well
+ # Fixed issue with special characters (UTF-8)
+
+17-Mar-2011 : v1.10.1
+ + Added ability to limit text by number of words, like {text:20words}
+ ^ Changed language files to be J1.6 ready
+ ^ Changed default readmore class to readon
+ # Fixed issue with navigation links of included article not working correctly
+ # Fixed issue with editor button not working for registered/author level
+ # Fixed issue with tags being interpreted in frontend editor fields with very large contents
+ # Fixed issue with div alignment dropdown not working
+ # Fixed issue with problems when html has multiple body tags
+
+10-Feb-2011 : v1.10.0
+ + Added language file for long description in system plugin
+ + Added ability to call on K2 extra fields by their id too: {extra-1}
+ ^ Changed extension icon / logo
+ # Fixed issue with tags for parameter data throwing error
+ # Fixed issue with public access to editor button popup page (security fix!)
+
+15-Jan-2011 : v1.9.3
+ ^ Changed extension icon / logo
+ # Fixed display of dates to match display and offset settings in Joomla
+
+13-Dec-2010 : v1.9.2
+ # Fixed issue with conflicting characters in language file
+
+12-Dec-2010 : v1.9.1
+ # Fixed some issues with compatibility with AncyMailing
+ # Fixed issues with document being called to early
+ # Fixed some issues with loading of language strings
+ # Cleaned up some code
+
+25-Nov-2010 : v1.9.0
+ + Added checks to see if NoNumber! Elements plugin is installed/enabled
+ ^ Fixed and updated all language strings
+ ^ Improved code to make it lighter/faster
+ # Fixed issue with tags being handled in edit fields
+
+16-Nov-2010 : v1.8.0
+ # Fixed extension causing pages to break on some setups
+ # Fixed issue with not working in some forms (where they should)
+
+15-Nov-2010 : v1.7.0
+ ^ Moved popup styles and images to NoNumber! Elements plugin
+ ^ Changed to also renders k2 plugins over content
+ ^ Made syntax also be handled in AncyMailing
+ ^ Improved code to make it lighter/faster
+
+18-Oct-2010 : v1.6.1
+ + Added ability to also put {div} tag outside {article} tag
+ ^ Changed layout of Editor Button popup window a little
+ ^ Changed default ordering of articles / K2 items in popup window
+ ^ Changed tooltips ids/titles/aliases of articles in list in Editor Button popup window
+ # Fixed some language strings
+ # Fixed issue with category filter not working in article list
+ # Fixed issue with reset button not clearing all filters
+
+17-Oct-2010 : v1.6.0
+ + Added ability to wrap output in styled div tags
+ ^ Changed layout of Editor Button popup window a little
+ ^ Changed tooltips ids/titles/aliases of articles in list in Editor Button popup window
+ # Fixed issue with comment tags not being true HTML compliant
+
+18-Sep-2010 : v1.5.0
+ + Added ability to overrule readmore classname
+ + Added extra output control through {if} & {else} tags
+ # Fixed issue with tags being handled in Eventlist textareas
+
+03-Sep-2010 : v1.4.6
+ # Fixed issue with custom readmore text not working
+
+30-Aug-2010 : v1.4.5
+ + Added option to turn off the handling of content plugins
+ # Fixed issue with errors when k2 hasn't been uninstalled properly
+
+30-Jul-2010 : v1.4.4
+ # Fixed issue with text attributes (strip and length) not working (since 1.4.3)
+
+29-Jul-2010 : v1.4.3
+ + Added ability to add custom format on date values
+
+24-Jul-2010 : v1.4.2
+ ^ Changed way version and license information are displayed (now via ajax)
+ ^ Changed way versions and licenses are checked (no more base64)
+
+10-Jul-2010 : v1.4.1
+ # Fixed issue with error about reference passing
+
+07-Jul-2010 : v1.4.0
+ + Added ability to also display values stored in the attribs/params
+ + Added ability to also display K2 extra fields
+ ^ Improved some code to make it lighter
+ # Fixed incompatibility with rokajaxsearch
+ # Fixed issue with readmore link not being completely SEF compatible
+ # Fixed some issues with (content) plugins being called on
+ # Fixed incompatibility with php4 (due to use of stripos function)
+
+23-Jun-2010 : v1.3.2
+ ^ Added {link} tag to easily add link to article to stuff
+ # Fixed issue with readmore links not being fully SEF compatible
+ # Fixed issue with code looping, causing page timeouts
+
+22-Jun-2010 : v1.3.1
+ # Fixed issue with foreach error in some cases
+
+22-Jun-2010 : v1.3.0
+ + Added support for K2 items
+ ^ Improved code (=faster)
+ ^ Improved removal of obsolete paragraph tags
+ # Fixed some ordering issues in the (editor button) modal popup
+ # Fixed issue with text type selection not working in the (editor button) modal popup
+
+22-May-2010 : v1.2.1
+ ^ Improved removal of obsolete paragraph tags
+ # Fixed issue with some language strings not being loaded
+ # Fixed styling of notice in the (editor button) modal popup
+ # Fixed issue with ordering not working in (editor button) modal popup
+
+12-May-2010 : v1.2.0
+ + Added option to strip html tags from the texts (text, intro, full)
+ + Added ability to set more than 1 data tag to insert
+ + Added ability to set default data tags and parameters (in editors-xtd plugin parameters)
+ + Added option to not place the HTML comments
+ ^ Improved removal of obsolete paragraph tags
+ # Fixed issue with editor button popup page being accessible to all
+ # Fixed issue with surrounding tags with digits (like h1) not being closed
+ # Fixed issue with undefined index notice in some occasions
+ # Fixed issue with undefined reference error on some setups
+ # Fixed issues with tags not closing properly when cutting of text with max character limit
+ # Fixed issues with script tags when cutting of text with max character limit
+
+02-Apr-2010 : v1.1.0
+ + Content plugins are now executed over article text (even when placed in modules and such)
+ + Added readmore class to readmore links
+ # Fixed issue with publish dates not being taken into account
+ # Fixed issue with rss feed breaking
+ # Fixed issue with errors when using max character limit and article text is shorter
+ # Fixed issues with tags not closing properly when cutting of text with max character limit
+ # Fixed issue with errors about registry for php 5.0.5
+
+09-Feb-2010: v1.0.1
+ + Added some missing language strings
+ + Added option to ignore published state of articles
+ ^ Reduced number of database queries
+ # Fixed location of Joomla! DTD files
+ # Fixed issue with deprecated syntax for php 5.3+
+ # Fixed issue with preg_match_all error in some cases (when article author is not set)
+ # Fixed issue with assignment to JACL user group levels not working correctly
+
+20-Jan-2010 : v1.0.0
+ + First stable release
+ + Added Commercial License Code support
+ ^ Moved elements to separate global plugin (also used by other extensions)
+ # Fixed issue with titles with special characters
+
+19-Dec-2009 : v0.2.0
+ + Added tag to place a read more link
+ + Added tag to place the url to the article
+ ^ Changed syntax
+ ^ Improved way texts get cut of when using maximum length
+
+18-Dec-2009 : v0.1.2
+ ^ Improved query for texts
+ # Fixed issue with all text displaying when choosing introtext / fulltext
+
+16-Dec-2009 : v0.1.1
+ # Fixed issue with php errors on frontpage
+ # Fixed issue with alert in plugin admin page
+
+15-Dec-2009 : v0.1.0
+ + First beta release

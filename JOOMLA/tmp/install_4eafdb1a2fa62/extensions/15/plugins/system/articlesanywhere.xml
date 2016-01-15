@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/plugin-install.dtd">
+<install version="1.5" type="plugin" group="system">
+	<name>System - Articles Anywhere</name>
+	<description>PLG_SYSTEM_ARTICLESANYWHERE_DESC</description>
+	<version>1.13.1</version>
+	<creationDate>October 2011</creationDate>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright © 2011 NoNumber! All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<!-- Files -->
+	<files>
+		<filename plugin="articlesanywhere">articlesanywhere.php</filename>
+		<folder>articlesanywhere</folder>
+	</files>
+
+	<!-- Parameters -->
+	<params addpath="/plugins/system/nnframework/fields">
+		<param name="@loadlanguage" type="nn_loadlanguage" extension="plg_system_articlesanywhere" />
+		<param name="@license" type="nn_license" extension="ARTICLES_ANYWHERE" />
+		<param name="@version" type="nn_version" extension="ARTICLES_ANYWHERE" xml="/plugins/system/articlesanywhere.xml" />
+		<param name="@header" type="nn_header"
+			label="ARTICLES_ANYWHERE"
+			description="ARTICLES_ANYWHERE_DESC"
+			xml="/plugins/system/articlesanywhere.xml"
+			language_file="plg_system_articlesanywhere"
+			image="/plugins/system/articlesanywhere/images/logo.png"
+			image_w="60" image_h="80"
+			url="http://www.nonumber.nl/articlesanywhere"
+			help_url="http://www.nonumber.nl/articlesanywhere" />
+
+		<param name="article_tag" type="text" default="article" label="AA_TAG" description="AA_TAG_DESC" />
+		<param name="ignore_state" type="radio" default="0" label="AA_IGNORE_ARTICLE_STATE" description="AA_IGNORE_ARTICLE_STATE_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="use_ellipsis" type="radio" default="1" label="AA_USE_ELLIPSIS" description="AA_USE_ELLIPSIS_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+
+		<param name="@block_articles_a" type="nn_block" start="1" label="NN_ARTICLES" description="AA_ARTICLES_DESC" />
+			<param name="articles_enable" type="radio" default="1" label="NN_ENABLE_IN_ARTICLES" description="AA_ENABLE_IN_ARTICLES_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="@toggler_articles_a" type="nn_toggler" param="articles_enable" value="1" />
+				<param name="articles_security_level" type="nn_grouplevel" default="23" label="AA_SECURITY_LEVEL" description="AA_SECURITY_LEVEL_DESC" />
+			<param name="@toggler_articles_b" type="nn_toggler" />
+		<param name="@block_articles_b" type="nn_block" end="1" />
+
+		<param name="@block_components_a" type="nn_block" start="1" label="NN_COMPONENTS" description="AA_COMPONENTS_DESC" />
+			<param name="components_enable" type="radio" default="1" label="NN_ENABLE_IN_COMPONENTS" description="AA_ENABLE_IN_COMPONENTS_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="@toggler_components_a" type="nn_toggler" param="components_enable" value="1" />
+				<param name="components" type="nn_components" default="" admin="0" label="NN_DISABLE_ON_COMPONENTS" description="AA_DISABLE_ON_COMPONENTS_DESC" />
+			<param name="@toggler_components_b" type="nn_toggler" />
+		<param name="@block_components_b" type="nn_block" end="1" />
+
+		<param name="@block_otherareas_a" type="nn_block" start="1" label="NN_OTHER_AREAS" description="AA_OTHER_AREAS_DESC" />
+			<param name="other_enable" type="radio" default="1" label="NN_ENABLE_OTHER_AREAS" description="AA_ENABLE_OTHER_AREAS_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+		<param name="@block_otherareas_b" type="nn_block" end="1" />
+
+		<param name="@block_other_a" type="nn_block" start="1" label="NN_OTHER_SETTINGS" />
+			<param name="place_comments" type="radio" default="1" label="NN_PLACE_HTML_COMMENTS" description="NN_PLACE_HTML_COMMENTS_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="run_content_plugins" type="radio" default="1" label="AA_RUN_CONTENT_PLUGINS" description="AA_RUN_CONTENT_PLUGINS_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+		<param name="@block_other_b" type="nn_block" end="1" />
+	</params>
+</install>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" version="1.7.0" group="system" method="upgrade">
+    <name>PLG_SEOFLI</name>
+    <version>2.5-1</version>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <author>Viktor Vogel</author>
+    <authoremail>admin@kubik-rubik.de</authoremail>
+    <authorurl>http://www.kubik-rubik.de</authorurl>
+    <copyright>Copyright 2011 Viktor Vogel. All rights reserved.</copyright>
+    <creationDate>27-Jan-2012</creationDate>
+    <description>PLG_SEOFLI_XML_DESCRIPTION</description>
+    <files folder="site">
+        <filename plugin="seofli">seofli.php</filename>
+        <filename plugin="seofli">index.html</filename>
+    </files>
+    <languages folder="site/language">
+        <language tag="de-DE">de-DE/de-DE.plg_system_seofli.ini</language>
+        <language tag="de-DE">de-DE/de-DE.plg_system_seofli.sys.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_seofli.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_seofli.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="edit_links" type="list" default="1" label="PLG_SEOFLI_EDITLINKS" description="PLG_SEOFLI_EDITLINKSDESC">
+                    <option value="0">JNO</option>
+                    <option value="1">PLG_SEOFLI_TITLEATTRIBUTE</option>
+                </field>
+                <field name="overwrite_links" type="list" default="0" label="PLG_SEOFLI_OVERWRITELINKS" description="PLG_SEOFLI_OVERWRITELINKSDESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="edit_images" type="list" default="1" label="PLG_SEOFLI_EDITIMAGES" description="PLG_SEOFLI_EDITIMAGESDESC">
+                    <option value="0">JNO</option>
+                    <option value="1">PLG_SEOFLI_ALTATTRIBUTE</option>
+                    <option value="2">PLG_SEOFLI_ALTANDTITLEATTRIBUTE</option>
+                </field>
+                <field name="overwrite_images" type="list" default="0" label="PLG_SEOFLI_OVERWRITEIMAGES" description="PLG_SEOFLI_OVERWRITEIMAGESDESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
