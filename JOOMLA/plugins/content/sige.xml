@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>SIGE</name>
+	<author>Viktor Vogel</author>
+	<creationDate>06.06.2011</creationDate>	
+	<copyright>This extension in released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</copyright>
+	<authorEmail>admin@kubik-rubik.de</authorEmail>
+	<authorUrl>http://joomla-extensions.kubik-rubik.de/</authorUrl>
+	<version>1.5-15</version>
+	<description>PLUGINDESC</description>
+	<files>
+		<filename plugin="sige">sige.php</filename>
+		<filename plugin="sige">plugin_sige/closelabel.gif</filename>
+		<filename plugin="sige">plugin_sige/blank.gif</filename>
+		<filename plugin="sige">plugin_sige/loading.gif</filename>
+		<filename plugin="sige">plugin_sige/mootools.js</filename>
+		<filename plugin="sige">plugin_sige/nextlabel.gif</filename>
+		<filename plugin="sige">plugin_sige/prevlabel.gif</filename>
+		<filename plugin="sige">plugin_sige/pause.png</filename>
+		<filename plugin="sige">plugin_sige/play.png</filename>
+		<filename plugin="sige">plugin_sige/shadow.gif</filename>
+		<filename plugin="sige">plugin_sige/shadowAlpha.png</filename>		
+		<filename plugin="sige">plugin_sige/showthumb.php</filename>
+		<filename plugin="sige">plugin_sige/print.php</filename>
+		<filename plugin="sige">plugin_sige/print.png</filename>
+		<filename plugin="sige">plugin_sige/download.php</filename>
+		<filename plugin="sige">plugin_sige/download.png</filename>
+		<filename plugin="sige">plugin_sige/sige.css</filename>
+		<filename plugin="sige">plugin_sige/slimbox.css</filename>
+		<filename plugin="sige">plugin_sige/lytebox.css</filename>
+		<filename plugin="sige">plugin_sige/slimbox.js</filename>				
+		<filename plugin="sige">plugin_sige/slimbox_en.js</filename>			
+		<filename plugin="sige">plugin_sige/slimbox2.js</filename>				
+		<filename plugin="sige">plugin_sige/slimbox2_en.js</filename>				
+		<filename plugin="sige">plugin_sige/lytebox.js</filename>
+		<filename plugin="sige">plugin_sige/lytebox_en.js</filename>
+		<filename plugin="sige">plugin_sige/shadowbox.js</filename>
+		<filename plugin="sige">plugin_sige/shadowbox_en.js</filename>
+		<filename plugin="sige">plugin_sige/shadowbox.css</filename>
+		<filename plugin="sige">plugin_sige/close-shadow.png</filename>
+		<filename plugin="sige">plugin_sige/loading-shadow.gif</filename>
+		<filename plugin="sige">plugin_sige/next-shadow.png</filename>
+		<filename plugin="sige">plugin_sige/pause-shadow.png</filename>		
+		<filename plugin="sige">plugin_sige/play-shadow.png</filename>		
+		<filename plugin="sige">plugin_sige/previous-shadow.png</filename>		
+		<filename plugin="sige">plugin_sige/watermark.png</filename>		
+	</files>
+		<languages>
+		<language tag="en-GB">en-GB.plg_content_sige.ini</language>
+		<language tag="de-DE">de-DE.plg_content_sige.ini</language>
+	</languages>
+	<params>
+		<param name="th_width" type="text" default="200" size="5" label="WIDTHTHUMBS" description="WIDTHTHUMBSDESC" />
+		<param name="th_height" type="text" default="200" size="5" label="HEIGHTTHUMBS" description="HEIGHTTHUMBSDESC" />
+		<param name="gap_v" type="text" default="30" size="5" label="GAPV" description="GAPVDESC" />
+		<param name="gap_h" type="text" default="20" size="5" label="GAPH" description="GAPHDESC" />
+		<param name="ratio" type="radio" default="1" label="RATIO" description="">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>		
+		<param name="download" type="radio" default="0" label="DOWNLOAD" description="DOWNLOADDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+		<param name="print" type="radio" default="0" label="PRINT" description="PRINTDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+		<param name="th_quality" type="text" default="80" size="5" label="QUALITYJPG" description="QUALITYJPGDESC" />
+		<param name="th_quality_png" type="text" default="6" size="5" label="QUALITYPNG" description="QUALITYPNGDESC" />
+		<param name="iptc" type="radio" default="0" label="IPTC" description="IPTCDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+		<param name="iptcutf8" type="radio" default="0" label="IPTCUTF8" description="IPTCUTF8DESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+		<param name="thumbdetail" type="radio" default="0" label="THUMBNAILDETAIL" description="THUMBNAILDETAILDESC">			
+		<option value="0">1:1</option>			
+		<option value="1">TOPLEFT</option>		
+		<option value="2">TOPRIGHT</option>		
+		<option value="3">BOTTOMLEFT</option>		
+		<option value="4">BOTTOMRIGHT</option>		
+		</param>
+		<param name="crop" type="radio" default="0" label="CROP" description="CROPDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+		<param name="crop_factor" type="text" default="50" size="5" label="CROPFACTOR" description="CROPFACTORDESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="thumbs" type="radio" default="0" label="THUMBS" description="THUMBSDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+		<param name="thumbs_new" type="radio" default="0" label="THUMBSNEW" description="THUMBSNEWDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+		<param name="root" type="radio" default="0" label="ROOT" description="ROOTDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+		<param name="random" type="radio" default="2" label="RANDOM" description="RANDOMDESC">			
+		<option value="1">Yes</option>			
+		<option value="2">NOASC</option>		
+		<option value="3">NODESC</option>
+		<option value="4">TIMEASC</option>
+		<option value="5">TIMEDESC</option>
+		</param>
+		<param name="view" type="radio" default="0" label="VIEW" description="VIEWDESC">			
+		<option value="0">Slimbox</option>			
+		<option value="1">Lytebox</option>		
+		<option value="2">Lyteshow</option>		
+		<option value="3">Shadowbox</option>		
+		</param>
+		<param name="js" type="radio" default="0" label="JS" description="JSDESC">			
+		<option value="0">slimbox.js</option>			
+		<option value="1">lytebox.js</option>		
+		<option value="2">shadowbox.js</option>		
+		<option value="3">No</option>		
+		</param>
+		<param name="mootoolsupgrade" type="radio" default="0" label="MOOTOOLSUPGRADE" description="MOOTOOLSUPGRADEDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>		
+		<param name="mootools" type="radio" default="0" label="MOOTOOLS" description="MOOTOOLSDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+		<param name="limit" type="radio" default="0" label="LIMIT" description="LIMITDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+		<param name="limit_quantity" type="text" default="10" size="5" label="LIMITQUANTITY" description="LIMITQUANTITYDESC" />
+		<param name="column_quantity" type="text" default="" size="5" label="COLUMNQUANTITY" description="COLUMNQUANTITYDESC" />
+		<param name="css_image" type="radio" default="0" label="CSSIMAGE" description="CSSIMAGEDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+		<param name="css_image_half" type="radio" default="0" label="CSSIMAGEHALF" description="CSSIMAGEHALFDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+		<param name="noslim" type="radio" default="0" label="NOSLIM" description="NOSLIMDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+		<param name="list" type="radio" default="0" label="LIST" description="LISTDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+		<param name="caption" type="radio" default="0" label="CAPTION" description="CAPTIONDESC">					
+		<option value="1">Yes</option>		
+		<option value="0">No</option>				
+		</param>
+		<param name="image_info" type="radio" default="1" label="IMAGEINFO" description="IMAGEINFODESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>		
+		<param name="displaynavtip" type="radio" default="0" label="DISPLAYNAVTIP" description="">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>		
+		<param name="navtip" type="text" default="" size="50" label="NAVTIP" description="NAVTIPDEFAULT" />
+		<param name="displaymessage" type="radio" default="0" label="DISPLAYMESSAGE" description="">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="message" type="text" default="" size="50" label="MESSAGE" description="MESSAGEDEFAULT" />
+		<param name="image_link" type="text" default="" size="50" label="IMAGELINK" description="IMAGELINKDESC" />
+		<param name="image_link_new" type="radio" default="0" label="IMAGELINKNEW" description="">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="watermark" type="radio" default="0" label="WATERMARK" description="WATERMARKDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+		<param name="watermark_new" type="radio" default="0" label="WATERMARKNEW" description="WATERMARKNEWDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+		<param name="watermarkposition" type="radio" default="0" label="WATERMARKPOSITION" description="">			
+		<option value="0">CENTER</option>			
+		<option value="1">TOPLEFT</option>		
+		<option value="2">TOPRIGHT</option>		
+		<option value="3">BOTTOMLEFT</option>		
+		<option value="4">BOTTOMRIGHT</option>		
+		</param>		
+		<param name="encrypt" type="radio" default="1" label="ENCRYPT" description="ENCRYPTDESC">			
+		<option value="0">ROT13</option>			
+		<option value="1">MD5</option>		
+		<option value="2">SHA1</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="copyright" type="radio" default="1" label="COPYRIGHT" description="COPYRIGHTDESC">			
+		<option value="1">Yes</option>			
+		<option value="0">No</option>		
+		</param>
+	</params>
+</install>

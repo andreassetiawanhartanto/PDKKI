@@ -1,0 +1,63 @@
+@import "libs/normalize";
+@import "libs/pocketgrid";
+@import "libs/bourbon/bourbon";
+@import "libs/mrmrs/colors/colors";
+
+img, video, embed {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #FFDA35;
+  color: #04183C;
+  font-family: "Proxima Nova Soft W03 Reg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+h1, .h1 {
+  border-top: solid 10px #04183C;
+  border-bottom: solid 10px #04183C;
+  font-family:'DIN 1451 W01 Engschrift';
+  font-size: 5em;
+  letter-spacing: 5px;
+  margin: 10px 0;
+}
+
+.container {
+  padding: 0 1em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+input, button {
+  border: solid 1px #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.u-inputText {
+  box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.75);
+  width: 80%;
+}
+
+.u-buttonGhost {
+  background-color: transparent;
+  border: solid 2px #fff;
+  border-radius: 10px;
+  color: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.u-label {
+  display: block;
+  font-weight: 700;
+  padding: 15px 0;
+}

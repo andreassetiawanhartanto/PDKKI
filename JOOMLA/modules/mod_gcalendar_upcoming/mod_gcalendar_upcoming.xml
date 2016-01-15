@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>GCalendar Upcoming Events</name>
+	<author>G4J Project</author>
+	<creationDate>July 2011</creationDate>
+	<copyright>This module is released under the GNU/GPL License.
+	</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html
+		GNU/GPL</license>
+	<authorEmail>info@g4j.laoneo.net
+	</authorEmail>
+	<authorUrl>g4j.laoneo.net</authorUrl>
+	<version>2.2.8</version>
+	<description>This module shows the upcoming events from a google
+		calendar.</description>
+	<files>
+		<filename module="mod_gcalendar_upcoming">mod_gcalendar_upcoming.php
+		</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_gcalendar_upcoming.ini
+		</language>
+		<language tag="de-DE">languages/de-DE.mod_gcalendar_upcoming.ini
+		</language>
+	</languages>
+	<params addpath="/administrator/components/com_gcalendar/elements">
+		<param name="calendarids" type="gcalendar" default=""
+			label="Select Calendars" description="The calendars" />
+		<param name="date_format" type="text" size="80" default="%d.%m.%Y"
+			label="Date format"
+			description="The format of the date for an event (see http://www.php.net/strftime for details)." />
+		<param name="time_format" type="text" size="80" default="%H:%M"
+			label="Time format"
+			description="The format of the time for an event (see http://www.php.net/strftime for details)." />
+		<param name="max_events" type="text" size="2" default="5" label="Max events"
+			description="The maximal count of events should be displayed." />
+		<param name="order" type="radio" default="1" label="Sort Order"
+			description="The order strategy of the events.">
+			<option value="1">Start Time</option>
+			<option value="0">Last Modified</option>
+		</param>
+		<param name="find" type="text" size="80" default=""
+			label="Filter"
+			description="Only events with the text will be shown." />
+		<param name="@spacer" type="spacer" default="" label=""
+			description="" />
+		<param name="images" type="list" default="yes" label="Include Calendar Images" description="Choose Yes to display calendar images next to upcoming events. If Custom is selected the colors from below are set instead of the calendar colors.">
+			<option value="yes">Yes</option>
+			<option value="custom">Custom</option>
+			<option value="no">No</option>
+		</param>
+		<param name="calimage_background" type="color" size="7" default="729FCC" label="Month Background Color" description="Enter a color to be displayed behind the Month text of the calendar image. This setting only applies if Include Calendar Images is set to Custom!!"> </param>
+		<param name="calimage_month" type="color" size="7" default="FFFFFF" label="Month Text Color" description="Enter a text color for the Month text on the calendar image. This setting only applies if Include Calendar Images is set to Custom!!" />
+		<param name="calimage_day" type="color" size="7" default="7CADDE" label="Day Text Color" description="Enter a text color for the Day text on the calendar image. This setting only applies if Include Calendar Images is set to Custom!!" />
+		<param name="@spacer" type="spacer" default="" label=""
+			description="" />
+		<param name="moduleclass_sfx" type="text" size="80" default=""
+			label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+	<params group="advanced">
+		<param name="text_before" type="textarea" default=""
+			label="Content before events" description="This text will be displayed before the event list."
+			rows="3" cols="50" />
+		<param name="output" type="textarea2" default="" label="Event output"
+			description="Here you can customize the appearance of the event."
+			rows="5" cols="50">
+			<content>&lt;p&gt;{startdate} {starttime} {dateseparator} {enddate}
+				{endtime}&lt;br/&gt;&lt;a
+				href="{backlink}"&gt;{title}&lt;/a&gt;&lt;/p&gt;</content>
+			<description>
+				Here you can modify the event output. The following
+				attributes of an event are provided:&lt;br&gt;
+				{title},
+				{description},
+				{startdate}, {starttime}, {dateseparator}, {enddate},
+				{endtime}
+				{where}, {backlink}, {link}, {maplink}, {calendarname},
+				{calendarcolor}
+			</description>
+		</param>
+		<param name="text_after" type="textarea" default=""
+			label="Content after events" description="This text will be displayed after the event list."
+			rows="3" cols="50" />
+		<param name="end_date" type="text" size="80" default=""
+				label="End Date"
+				description="Limit to events that will start before the date, can be relative (must be a valid string which can be passed to strtotime http://php.net/manual/en/function.strtotime.php as reference)." />
+		<param name="gc_cache" type="list" default="1" label="Cache"
+			description="Is cacheing enabled.">
+			<option value="1">Use global</option>
+			<option value="2">Cache always</option>
+			<option value="0">Cache never</option>
+		</param>
+		<param name="gc_cache_time" type="text" default="900" label="Cache Time"
+			description="The time before the module is recached in sec." />
+	</params>
+</install>

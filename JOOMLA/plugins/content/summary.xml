@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - Summary</name>
+	<author>Alexandre Huber</author>
+	<creationDate>02/06/2009</creationDate>
+	<copyright>Alexandre Huber 2009</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>alexandre.huber@moleculargeek.net</authorEmail>
+	<authorUrl>www.moleculargeek.net</authorUrl>
+	<version>1.5</version>
+	<description></description>
+	<files>
+		<filename plugin="summary">summary.php</filename>
+	</files>
+	<params>
+        <param name="enabled" type="radio" default="1" label="Enable Summary">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+		<param name="class" type="text" label="Summary link's class" description="Class applied to the summaries link markups" default="summary" />
+		<param name="link" type="list" default="1" label="Link to full text" description="Place a link to the full article around the summary by default">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+</install>

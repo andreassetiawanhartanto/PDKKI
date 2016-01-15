@@ -1,0 +1,19 @@
+@import "libs/bourbon/bourbon";
+
+.container {
+  max-width: em(600);
+  padding: 0 5em;
+}
+
+.logo {
+  background-color: transparent;
+  padding: 25px 0;
+}
+
+  .no-js .logo {
+    background-color: #000;
+    margin: 0;
+  }
+/*=====================================
+  Layout: Medium devices
+======================================= */

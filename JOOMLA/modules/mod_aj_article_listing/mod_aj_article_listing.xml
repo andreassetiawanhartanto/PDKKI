@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>AJ Article Listing</name>
+    <creationDate>March 2011</creationDate>
+    <author>Luis Murcia / Stefan Hultman</author>
+    <copyright>This module is released under the GNU/GPL License</copyright>
+    <license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+     <authorEmail>contact@absolutejoomla.com</authorEmail>
+    <authorUrl>www.absolutejoomla.com</authorUrl>
+    <version>3.2.1</version>
+    <description>AJ ARTICLE LISTING 3.2 WAS SUCCESSFULLY INSTALLED. SETUP AND ACTIVATION AVAILABLE THROUGH THE MODULE MANAGER UNDER THE EXTENSIONS MENU.</description>
+     <files>
+         <filename module="mod_aj_article_listing">mod_aj_article_listing.php</filename>
+         <filename module="mod_aj_article_listing">index.html</filename>
+         <filename module="mod_aj_article_listing">mod_aj_article_listing/index.html</filename>
+         <filename module="mod_aj_article_listing">mod_aj_article_listing/logo.png</filename>
+     </files>
+	 <params>
+        <param name="linkmenu" size="5" type="text" label="Linked Menu" description="Menu item to be linked for formatting"/>
+        <param name="sections_showhide" default="show" size="44" type="list" label="Sections" description="Show or Hide Section IDs below">
+            <option value="show">Show only sections from following IDs:</option>
+            <option value="hide">Hide sections from following IDs:</option>
+        </param>
+        <param name="secids" size="44" type="text" label="Section IDs" description="Section IDs to show or hide, separeted by comma, no value will show all sections"/>
+        <param name="sortby_sects" default="s.title" size="44" type="list" label="Order Sections By" description="Sort sections by section id, title or order">
+            <option value="s.title">Section Title</option>
+            <option value="s.id">Section ID</option>
+            <option value="s.ordering">Order</option>
+        </param>
+        <param name="sortby_cats" default="c.title" size="44" type="list" label="Order Categories By" description="Sort categories by category id, title or order">
+            <option value="c.title">Category Title</option>
+            <option value="c.id">Category ID</option>
+            <option value="c.ordering">Order</option>
+        </param>
+        <param name="article_menu" default="show" size="44" type="list" label="Articles Menu" description="Show Articles Menu (3rd level)">
+            <option value="show">Show</option>
+            <option value="hide">Hide</option>
+        </param>
+        <param name="sortby_arts" default="a.title" size="44" type="list" label="Order Articles By" description="Sort articles by article id, title or order">
+            <option value="a.title">Article Title</option>
+            <option value="a.id">Article ID</option>
+            <option value="a.ordering">Order</option>
+        </param>
+	 	<param name="sortorder" default="ASC"  type="list" label="Sort Order" description="Sort ascending or descending">
+          <option value="ASC">Ascending</option>
+    	  <option value="DESC">Descending</option>
+        </param>
+        <param name="layout" default="0"  type="list" label="Layout" description="Horizontal or Vertical layout">
+            <option value="0">Vertical</option>
+			<option value="1">Horizontal</option>
+        </param>
+        <param name="alignbutton" default="left"  type="list" label="Align Button" description="Button position applied only when selecting vertical layout">
+            <option value="left">Left</option>
+			<option value="center">Center</option>
+			<option value="right">Right</option>
+        </param>
+        <param name="maxwidth" size="5" default="120" type="text" label="Maximum Width For Dropdown Menus" description="Maximum width for dropdown menus in pixels"/>
+		<param name="marginsize" size="5" default="3" type="text" label="Margin Space For Menus and Button" description="Margin space for dropdown menus and button in pixels"/>
+		<param name="paddingsize" size="5" default="2" type="text" label="Padding Space For Menus and Button" description="Padding space for dropdown menus and button in pixels"/>
+		<param name="labelhandler" default="manuallabels"  type="list" label="Labels" description="Menu and button labels">
+            <option value="manuallabels">Use the values below:</option>
+			<option value="defaultlabels">Use values from language file and ignore values below</option>
+        </param>
+		<param name="seclabel" default="Select Section" size="44" type="text" label="Section Menu Label" description="Section Menu Label"/>
+		<param name="catlabel" default="Select Category" size="44" type="text" label="Category Menu Label" description="Category Menu Label"/>
+		<param name="artlabel" default="Select Article" size="44" type="text" label="Articles Menu Label" description="Articles Menu Label"/>
+		<param name="buttonlabel" default="Go" size="44" type="text" label="Button Label" description="Button Label"/>
+		<param name="message" default="Please, select Section and Category." size="44" type="text" label="Alert Message" description="Alert Message"/>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	 </params>
+     <languages>
+        <language tag="en-GB">language/en-GB/en-GB.mod_aj_article_listing.ini</language>
+     </languages>
+</install>

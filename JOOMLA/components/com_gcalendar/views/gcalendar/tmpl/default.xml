@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="GCalendar">
+		<message>
+			<![CDATA[GCALENDAR LINK DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>GCalendar</name>
+		<description>GCALENDAR DESC</description>
+		<params addpath="/administrator/components/com_gcalendar/elements">
+			<param name="calendarids" type="gcalendar" default=""
+				label="Select Calendars" description="The calendars" />
+			<param name="show_selection" type="radio" default="1"
+				label="Show Calendars" description="Shows the calendar list.">
+				<option value="1">Yes</option>
+				<option value="2">No</option>
+			</param>
+			<param name="defaultView" type="list" default="month"
+				label="The default view"
+				description="The view which is shown when clicking the first time on a link.">
+				<option value="month">Month</option>
+				<option value="week">Week</option>
+				<option value="day">Day</option>
+			</param>
+			<param name="weekstart" type="list" default="1" label="Week starts on"
+				description="The starting day of the week in the calendar.">
+				<option value="0">Sunday</option>
+				<option value="1">Monday</option>
+				<option value="2">Tuesday</option>
+				<option value="3">Wednesday</option>
+				<option value="4">Thursday</option>
+				<option value="5">Friday</option>
+				<option value="6">Saturday</option>
+			</param>
+			<param name="weekend" type="radio" default="1" 
+                label="Show weekend events" description="Shows or hides saturday and sunday (weekend), allowing a 'wider' view of weekdays."> 
+                <option value="1">Yes</option> 
+                <option value="0">No</option> 
+            </param> 
+			<param name="titleformat_month" type="text" default="MMMM yyyy" label="Title format month"
+				description="The format of the title in the month view." size="50" />
+			<param name="titleformat_week" type="text" default="MMM d[ yyyy]{ '&#8212;'[ MMM] d yyyy}" label="Title format week"
+				description="The format of the title in the week view." size="50" />
+			<param name="titleformat_day" type="text" default="dddd, MMM d, yyyy" label="Title format day"
+				description="The format of the title in the day view." size="50" />
+			<param name="timeformat_month" type="text" default="HH:mm{ - HH:mm}" label="Time format month"
+				description="The format of the time in the month view." size="50" />
+			<param name="timeformat_week" type="text" default="HH:mm{ - HH:mm}" label="Time format week"
+				description="The format of the time in the week view." size="50" />
+			<param name="timeformat_day" type="text" default="HH:mm{ - HH:mm}" label="Time format day"
+				description="The format of the time in the day view." size="50" />
+			<param name="axisformat" type="text" default="HH:mm" label="Axis format"
+				description="The format of the axis in the day and week view." size="50" />
+			<param name="@spacer" type="spacer" default="" label=""
+				description="" />
+			<param name="description_date_format" type="text" size="50" default="%d.%m.%Y"
+				label="Tooltip Date format"
+				description="The format of the date for an event (see http://www.php.net/strftime for details)." />
+			<param name="description_time_format" type="text" size="50" default="%H:%M"
+				label="Tooltip Time format"
+				description="The format of the time for an event (see http://www.php.net/strftime for details)." />
+			<param name="description_format" type="textarea2" default="" label="Event tooltip"
+				description="Here you can customize the appearance of the event tooltip."
+				rows="5" cols="50">
+			<content>&lt;p&gt;{startdate} {starttime} {dateseparator} {enddate} {endtime}&lt;br/&gt;{description}&lt;/p&gt;</content>
+			<description>
+				Here you can modify the event tooltip. The following
+				attributes of an event are provided:&lt;br&gt;
+				{title},
+				{description},
+				{startdate}, {starttime}, {dateseparator}, {enddate},
+				{endtime}
+				{where}, {backlink}, {link}, {maplink}, {calendarname},
+				{calendarcolor}
+			</description>
+			</param>
+			<param name="textbefore" type="textarea" default=""
+				label="Content before calendar" description="This text will be displayed before the google calendar."
+				rows="5" cols="50" />
+			<param name="textafter" type="textarea" default=""
+				label="Content after calendar" description="This text will be displayed after the google calendar."
+				rows="5" cols="50" />
+			<param name="show_event_as_popup" type="radio" default="1"
+				label="Show Events As Popup" description="Shows the event details in a modal popup.">
+				<option value="1">Yes</option>
+				<option value="2">No</option>
+			</param>
+			<param name="popup_width" type="text" default="650" size="5" label="Popu Width"
+				description="If the event is shown as popup the width can be defined here." />
+			<param name="popup_height" type="text" default="500" size="5" label="Popu Height"
+				description="If the event is shown as popup the height can be defined here." />
+			<param name="@spacer" type="spacer" default="" label=""
+				description="" />
+			<param name="pageclass_sfx" type="text" size="20" default=""
+				label="Page Class Suffix"
+				description="A suffix to be applied to the css classes of the page, this allows individual page styling" />
+		</params>
+		<advanced>
+			<param name="theme" type="text" size="50" default=""
+				label="Theme"
+				description="Define the jQuery theme (install it in the folder components/com_gcalendar/libraries/jquery/themes)." />
+			<param name="first_hour" type="text" default="6" label="First Hour"
+				description="The first hour that will be visible in the scroll pane. Values must be from 0-23, where 0=midnight, 1=1am, etc." size="10" />
+			<param name="min_time" type="text" default="0" label="Min Time"
+				description="The first hour/time that will be displayed, even when the scrollbars have been scrolled all the way up. This can be a number like 5 (which means 5am), a string like '5:30' (which means 5:30am) or a string like '5:30am'." size="10" />
+			<param name="max_time" type="text" default="24" label="Max Time"
+				description="The last hour/time (exclusively) that will be displayed, even when the scrollbars have been scrolled all the way down. This can be a number like 22 (which means 10pm), a string like '22:30' (which means 10:30pm) or a string like '10:30pm'." size="10" />
+			<param name="gccache" type="list" default="1" label="Cache"
+				description="Is cacheing enabled.">
+				<option value="1">Use global</option>
+				<option value="2">Cache always</option>
+				<option value="0">Cache never</option>
+			</param>
+			<param name="gccache_time" type="text" default="3600" label="Cache Time"
+				description="The cache time." />
+		</advanced>
+	</state>
+</metadata>

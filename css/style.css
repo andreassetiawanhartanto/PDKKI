@@ -82,6 +82,14 @@ body{ margin-bottom: 175px;}
   cursor: pointer;
 }
 
+.top20{
+  margin-top: 30px;
+}
+
+.uib-tab{
+  cursor: pointer;
+}
+
 /*Header Part*/
 
 @media (max-width: 768px){
@@ -91,6 +99,10 @@ body{ margin-bottom: 175px;}
 
   .navbar-default .navbar-nav>.active>a{
     color: black !important;
+  }
+
+  .navbar-default{
+    padding-top: 5px !important;
   }
 }
 
@@ -108,7 +120,6 @@ body{ margin-bottom: 175px;}
 }
 
 .navbar-default .navbar-nav > .active > a{
-      border: 1px solid #e7e7e7;
     border-bottom: none;
     background-color: white !important;
 }
@@ -125,4 +136,42 @@ body{ margin-bottom: 175px;}
 
 .navbar .navbar-collapse {
   text-align: center;
+}
+
+
+/*Test*/
+
+#sync1 .item{
+    padding: 15px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+#sync2 .item{
+    padding: 10px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+#sync2 .item h1{
+  font-size: 18px;
+}
+#sync2 .synced .item{
+}
+
+#sync1 .item img{
+  width: auto;
+  height: 400px;
+}
+
+#sync2 .item img{
+  width: auto;
+  height: 100px;
 }

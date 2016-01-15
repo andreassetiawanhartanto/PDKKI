@@ -1,0 +1,84 @@
+#jevents_body { line-height: 1.5em; width: 100%; }
+#jevents_header { border: none; position: relative; width: 100% !important; }
+#jevents_header td, #jevents_header tr, .ev_navigation tr, .ev_navigation td { border: none; line-height: 1.5em; }
+.jeventslight { color: #000; }
+#jevents_body td, #jevents_body tr, #jevents_body p, #jevents_body div { border: none; font-size: 11px; }
+#jevents_body h2 { background-image: url(../images/box_left_icon.gif); background-position: left; background-repeat: no-repeat; color: #606F79; font-size: 11px; margin: 0; padding-left: 13px; }
+#jevents_body p { font-size: 100%; margin: 2px 0; }
+#jevents_body hr { color: #000; height: 1px; }
+#jevents_body .textinput { background-image: url(../images/txtboxbg.gif); border-color: #9BAAAF #9BAAAF #AABBBF; border-style: solid; border-width: 1px; color: #686868; font-size: 11px; padding-left: 3px; padding-right: 3px; }
+#jevents_body .textarea { border-color: #9BAAAF #9BAAAF #AABBBF; border-style: solid; border-width: 1px; color: #686868; font-size: 11px; padding-left: 3px; padding-right: 3px; }
+#jevents_body .listbox { border: groove 1px; font-size: 11px; }
+#jevents_body .button { background-color: #FFF; background-image: url(images/btn_bg.gif); border: 1px solid #AABBBF; color: #404F59; font-size: 11px; padding: 2px; }
+#jevents_body a { color: #606F79; text-decoration: none; }
+#jevents_body .apptitle { font-size: 18px; font-weight: 700; }
+#jevents_body .appdesc { font-size: 10px; font-weight: 400; }
+#jevents_body .buttontext a { color: #606F79; font-size: 9px; text-decoration: none; }
+#jevents_body .previousmonth, #jevents_body .previousday, #jevents_body .previousweek { background-color: #d8e0e4; border-left: 1px solid #FFF; border-top: 1px solid #FFF; color: #606F79; font-size: 10px; font-weight: 700; padding: 3px 10px; text-decoration: none; }
+#jevents_body .nextmonth, #jevents_body .nextday, #jevents_body .nextweek { background-color: #d8e0e4; border-left: 1px solid #FFF; border-right: 1px solid #FFF; border-top: 1px solid #FFF; color: #606F79; font-size: 10px; font-weight: 700; padding: 3px 10px; text-decoration: none; }
+#jevents_body .currentmonth, #jevents_body .currentday, #jevents_body .currentweek { background-color: #d8e0e4; border-left: 1px solid #FFF; border-top: 1px solid #FFF; color: #606F79; font-size: 12px; font-weight: 700; padding: 3px 10px; text-decoration: none; }
+#jevents_body .tablev1 { background-color: #708088; border-bottom: 0 solid #62727A; border-left: 1px solid #95A5AD; border-right: 0 solid #62727A; border-top: 1px solid #95A5AD; color: #E0E4E4; font-size: 9px; margin: 0; padding: 12px 2px; text-decoration: none; text-transform: uppercase; vertical-align: middle; }
+#jevents_body .tablev1 a { color: #E0E4E4; text-decoration: none; }
+#jevents_body .tablev1 a:hover { color: #E0E4E4; text-decoration: underline; }
+#jevents_body .searchlink { color: #606F79; font-size: 10px; font-weight: 700; text-decoration: underline; }
+#jevents_body .eventtitle { color: #606F79; font-size: 10px; font-weight: 700; text-decoration: none; }
+#jevents_body .eventdesclarge { color: #505F69; font-size: 12px; line-height: 18px; }
+#jevents_body .cattitle, #jevents_body .usertitle, #jevents_body .grouptitle { color: #606F79; font-size: 11px; font-weight: 700; text-decoration: none; }
+#jevents_body .titlehighlight { color: #48B; text-decoration: underline; }
+#jevents_body .highlight { color: #80A000; text-decoration: underline; }
+#jevents_body .tableh1 { background-image: url(../images/tile_back1.gif); background-position: top; background-repeat: repeat-x; border-bottom: 1px solid #CED2D6; border-left: 1px solid #FFF; border-right: 1px solid #FFF; color: #606F79; font-size: 11px; height: 26px; padding: 8px 12px 8px 8px; }
+#jevents_body .tableh2 { background-color: #708088; background-image: url(../images/tile_sub.gif); border-left: 1px solid #95A5AD; border-right: 0 solid #62727A; color: #FFF; font-size: 10px; font-weight: 700; margin: 0; padding: 6px 12px; }
+#jevents_body .tableh2 a { color: #ccc; }
+#jevents_body .tableh2_nobackground { color: #FFF; font-size: 10px; font-weight: 700; }
+#jevents_body .tableb { background-color: #E4E8E8; border-left: 1px solid #FFF; border-top: 1px solid #FFF; color: #000; line-height: 16px; padding: 6px 10px; }
+#jevents_body .tablec { background-color: #d8e0e4; border-left: 1px solid #FFF; border-top: 1px solid #FFF; color: #000; padding: 3px 10px; }
+#jevents_body .maintable { border: 1px solid #99a0aa; margin-bottom: 0; margin-top: 0; }
+#jevents_body .error { color: Red; font-weight: 700; }
+#jevents_body .today { color: #606F79; font-size: 9px; font-weight: 700; }
+#jevents_body select, #jevents_body strong { color: inherit; }
+#jevents_body a:hover, #jevents_body .buttontext:hover, #jevents_body .previousmonth a:hover, #jevents_body .previousday a:hover, #jevents_body .previousweek a:hover, #jevents_body .nextmonth a:hover, #jevents_body .nextday a:hover, #jevents_body .nextweek a:hover, #jevents_body .searchlink:hover, #jevents_body .eventtitle:hover, #jevents_body .cattitle:hover, #jevents_body .usertitle:hover, #jevents_body .grouptitle:hover { color: #8090A3; text-decoration: underline; }
+#jevents_body .searchdesc, #jevents_body .eventdesc, #jevents_body .catdesc, #jevents_body .userdesc, #jevents_body .groupdesc { color: #606F79; font-size: 10px; }
+#jevents_body div.event_legend_item { border-left-style: solid; border-left-width: 0; float: left; margin-bottom: 4px; margin-left: 0; margin-top: 5px; overflow: hidden; padding-left: 4px; white-space: nowrap; width: 90px; }
+#jevents_body div.event_legend_name { border-left-style: solid; border-left-width: 3px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: .4pt; padding: 0 0 0 4px; }
+#jevents_body div.event_legend_desc { border-left-style: solid; border-left-width: 3px; display: none; padding: 0 0 0 4px; }
+#jevents_body .weekdaytopclr, #jevents_body .sundaytopclr { background-color: #607080; background-image: url(../images/tile_sub.gif); border-left: 1px solid #95A5AD; border-right: 0 solid #62727A; color: #FFF; font-size: 10px; font-weight: 700; margin: 0; padding: 6px 12px; }
+#jevents_body .sundaytopclr { background-color: #708094; }
+#jevents_body .weekdayclr { background-color: #EEF0F0; border-left: 1px solid #FFF; border-top: 1px solid #FFF; color: #C0C4C8; font-size: 10px; }
+#jevents_body .todayclr { background-color: #D0E6F6; border-left: 1px solid #FFF; border-top: 1px solid #FFF; color: #C0C4C8; font-size: 10px; }
+#jevents_body .sundayemptyclr { background-color: #DDE0E0; border-left: 1px solid #FFF; border-top: 1px solid #FFF; color: #C0C4C8; font-size: 10px; }
+#jevents_body .weekdayemptyclr { background-color: #E4E8E8; border-left: 1px solid #FFF; border-top: 1px solid #FFF; color: #C0C4C8; font-size: 10px; }
+#jevents_body .tdBtn { padding-left: 3px; padding-top: 3px; }
+#jevents_body .btnOut { background-color: #E4E8E8; border: 1px solid; border-color: #E4E8E8; }
+#jevents_body .btnDown { background-color: #D4D8D8; border: 1px solid; border-color: #C0C4C4 #FFF #FFF #C0C4C4; cursor: pointer; }
+#jevents_body a.flatButton img { border: 1px solid #E4E8E8; border-color: #d8e0e4; }
+#jevents_body .eventstyle { border-bottom: 2px solid #555; font-size: 9px; padding: 3px; text-align: left; }
+#jevents_body .eventfull { background-color: #E4E8E8; border-bottom: 1px solid #FFF; border-left: 1px solid #D0D4D4; border-right: 1px solid #FFF; border-top: 1px solid #D0D4D4; cursor: pointer; margin-left: 3px; margin-right: 3px; }
+#jevents_body .eventstart { background-color: #E4E8E8; border-bottom: 1px solid #FFF; border-left: 1px solid #D0D4D4; border-top: 1px solid #D0D4D4; cursor: pointer; margin-left: 3px; }
+#jevents_body .eventmiddle { background-color: #E4E8E8; border-bottom: 1px solid #FFF; border-top: 1px solid #D0D4D4; cursor: pointer; }
+#jevents_body .eventend { background-color: #E4E8E8; border-bottom: 1px solid #FFF; border-right: 1px solid #FFF; border-top: 1px solid #D0D4D4; cursor: pointer; margin-right: 3px; }
+#jevents_body .imagecell { background-color: #C8D2D8; padding: 8px; }
+#jevents_body .imagecell img { border: 1px solid; border-color: #FFF #C0C6C6 #C0C6C6 #FFF; cursor: pointer; }
+div.jev_pagination { text-align: center; width: 100%; }
+#jevents_body li.ev_td_li { border-style: solid; border-width: 0 0 1px 5px; display: block; list-style-type: none !important; margin: 0 10px; }
+.ev_prevrepeat { float: left; line-height: 20px; margin-right: 30px; }
+.ev_nextrepeat { float: left; line-height: 20px; }
+div.jev_adminfilter { font-weight: 700; margin: 5px auto 10px; text-align: center; }
+#jevents_body a.addjevent:hover { background-color: transparent; }
+a.addjevent { background-image: url(../images/add.png) !important; background-position: top left; background-repeat: no-repeat; float: right; height: 16px; margin-right: 2px; visibility: hidden; width: 16px; }
+a.addjevent img { border-width: 0 !important; }
+td.showjevadd a.addjevent { visibility: visible; }
+.jevtip-tip { background: #ffc; border: 1px solid #D4D5AA; float: left; max-width: 200px; padding: 0; z-index: 99; }
+.jevtip-text { font-size: .8em; margin: 0; padding: 0; }
+div.jevtt_title { font-size: 1.2em; font-weight: 700; padding: 2px; width: 196px; }
+div.jevtt_text { line-height: 1.3em; padding: 2px; width: 196px; }
+#action_dialog { text-align: left; }
+#action_dialog a { display: block; margin: 0 2px; }
+#jevents_header ul.actions { list-style-image: none; list-style-type: none; position: absolute; right: 0; top: 0; width: auto !important; }
+#jevents_header ul.actions li { background-image: none !important; float: left; line-height: 14px !important; margin-left: 3px; overflow: visible !important; padding-left: 0 !important; }
+#jevents_body .tableh1 td, #jevents_body .tableh1 tr, tr.caldaydigits, tr.caldaydigits td, #jevents_body .event_legend_container { border: none; }
+#jevents_body .atomic, #jevents_body .caldaydigits { font-size: 9px; }
+#jevents_body .btnOver, #jevents_body a.flatButton:hover img { background-color: #E4E8E8; border: 1px solid; border-color: #FFF #C0C4C4 #C0C4C4 #FFF; cursor: pointer; }
+@media print {
+    table.contentpaneopen { background-color: #FFF !important; background-image: none !important; }
+    div.ev_navigation, div.ev_adminpanel, .ev_noprint { display: none; }
+}

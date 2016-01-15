@@ -1,0 +1,13 @@
+#content_table {
+	padding: 10px;
+	width: 100%;
+}
+
+#content_table td {
+	vertical-align: top;
+}
+
+.event_content_key {
+	font-weight: bold;
+	width: 30px;
+}

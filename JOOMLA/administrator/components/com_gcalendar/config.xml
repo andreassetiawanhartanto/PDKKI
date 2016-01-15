@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params addpath="/administrator/components/com_gcalendar/elements">
+		<param name="google_apps_domain" type="text" default="" size="100"
+			label="Google Apps Domain" description="The Google Apps domain to get the calendar data from." />
+		<param name="timezone" type="googletimezones" default=""
+			label="Time Zone" description="The global timezone for GCalendar." />
+		<param name="loadJQuery" type="radio" default="yes" label="Load jQuery"
+			description="jQuery is required by this component The only reason not to load it is if it has already been loaded manually or by another module.">
+			<option value="no">No</option>
+			<option value="yes">Yes</option>
+		</param>
+		<param name="@spacer" type="spacer" default="Event output" label=""
+			description="" />
+		<param name="show_calendar_name" type="radio" default="1"
+			label="Show Calendar Name" description="Shows the calendar name">
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>
+		<param name="show_event_title" type="radio" default="1"
+			label="Show Event Title" description="Shows the event title.">
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>
+		<param name="show_event_date" type="radio" default="1"
+			label="Show Event Date" description="Shows the event date.">
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>
+		<param name="show_event_attendees" type="radio" default="2"
+			label="Show Event Attendees" description="Shows the event attendees.">
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>
+		<param name="show_event_description" type="radio" default="1"
+			label="Show Event Description" description="Shows the event description.">
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>
+		<param name="show_event_location" type="radio" default="1"
+			label="Show Event Location" description="Shows the event location.">
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>
+		<param name="show_event_author" type="radio" default="2"
+			label="Show Event Author" description="Shows the event author.">
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>
+		<param name="show_event_copy_info" type="radio" default="1"
+			label="Show Event Copy Info" description="Shows the copy to my calendar option.">
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>
+		<param name="event_date_format" type="text" size="80" default="%d.%m.%Y"
+			label="Date format"
+			description="The format of the date for an event (see http://www.php.net/strftime for details)." />
+		<param name="event_time_format" type="text" size="80" default="%H:%M"
+			label="Time format"
+			description="The format of the time for an event (see http://www.php.net/strftime for details)." />
+	</params>
+</config>

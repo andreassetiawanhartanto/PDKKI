@@ -11,7 +11,7 @@ var helloApp = angular.module("helloApp", ['ui.bootstrap']);
 		    return $scope.selected === item;
 		 };
 
-		 $scope.currentUrl = $sce.trustAsResourceUrl("https://www.youtube.com/embed/9np5y6ukrbc?autoplay=1");
+		 $scope.currentUrl = $sce.trustAsResourceUrl("https://www.youtube.com/embed/9np5y6ukrbc");
 
 		 $scope.videos = [{
 			 	"name" : "Bread From Heaven 2013 PDKKI Annual Retreat",
@@ -66,6 +66,50 @@ var helloApp = angular.module("helloApp", ['ui.bootstrap']);
 		 $scope.changeVideoSrc = function(video){
 			 $scope.currentUrl = $sce.trustAsResourceUrl(video.url);
 		 }
+
+		 $scope.photos = [
+		 {
+		 	"url" : "./img/slider/2.jpg"
+		 },{
+		 	"url" : "./img/slider/3.jpg"
+		 },{
+		 	"url" : "./img/slider/4.jpg"
+		 },{
+		 	"url" : "./img/slider/5.jpg"
+		 },{
+		 	"url" : "./img/slider/6.jpg"
+		 },{
+		 	"url" : "./img/slider/7.jpg"
+		 },{
+		 	"url" : "./img/slider/8.jpg"
+		 },{
+		 	"url" : "./img/slider/9.jpg"
+		 },{
+		 	"url" : "./img/slider/10.jpg"
+		 },{
+		 	"url" : "./img/slider/11.jpg"
+		 },{
+		 	"url" : "./img/slider/12.jpg"
+		 },{
+		 	"url" : "./img/slider/13.jpg"
+		 },{
+		 	"url" : "./img/slider/14.jpg"
+		 },{
+		 	"url" : "./img/slider/18.jpg"
+		 },{
+		 	"url" : "./img/slider/16.jpg"
+		 },{
+		 	"url" : "./img/slider/19.jpg"
+		 },{
+		 	"url" : "./img/slider/20.jpg"
+		 },{
+		 	"url" : "./img/slider/21.jpg"
+		 },{
+		 	"url" : "./img/slider/22.jpg"
+		 },{
+		 	"url" : "./img/slider/23.jpg"
+		 }
+		 ];
 
 		//  setTimeout(function(){
 		// 			 FB.api(
