@@ -91,10 +91,6 @@ var helloApp = angular.module("helloApp", ['ui.bootstrap']);
 		 },{
 		 	"url" : "./img/slider/12.jpg"
 		 },{
-		 	"url" : "./img/slider/13.jpg"
-		 },{
-		 	"url" : "./img/slider/14.jpg"
-		 },{
 		 	"url" : "./img/slider/18.jpg"
 		 },{
 		 	"url" : "./img/slider/16.jpg"

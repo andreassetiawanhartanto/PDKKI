@@ -120,8 +120,10 @@ body{ margin-bottom: 175px;}
 }
 
 .navbar-default .navbar-nav > .active > a{
-    border-bottom: none;
+    border-bottom: none !important;
     background-color: white !important;
+    border: 1px solid #D6D6D6;
+    margin-bottom: -1px;
 }
 
 .nav-tabs > li.active > a{
@@ -174,4 +176,28 @@ body{ margin-bottom: 175px;}
 #sync2 .item img{
   width: auto;
   height: 100px;
+}
+
+@media (max-width: 768px){
+  #sync1 .item img{
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+
+  #sync2 .item img{
+    width: auto;
+    height: 100px;
+  }
+
+  .about{
+    height: auto !important;
+    margin-bottom: 10px;
+  }
+}
+
+.about{
+  border: 1px solid black;
+  min-height: 300px;
+  padding: 15px;
 }
